@@ -1,9 +1,10 @@
 import React from 'react';
 import { Block } from 'baseui/block';
+import './App.css';
 
 const App = (): JSX.Element => {
   return (
-    <Block style={{ padding: '20px' }}>
+    <Block className="page--header">
       <h1>Cachebin</h1>
       <h4>
         Cachebin is a safe and decentralized service to share code snippets, notes and many more.
