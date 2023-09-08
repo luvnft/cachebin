@@ -12,7 +12,7 @@ const ChooseLanguage = ({ lang, setLang }: ChooseLanguageProps): JSX.Element => 
   }, [lang]);
 
   return (
-    <div>
+    <div data-testid="choose-language--component">
       <Combobox
         value={lang}
         onChange={(nextValue) => setLang(nextValue)}
