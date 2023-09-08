@@ -72,7 +72,8 @@
     "useTabs": false,
     "tabWidth": 2,
     "semi": true,
-    "bracketSpacing": true
+    "bracketSpacing": true,
+    "trailingComma": "none"
   },
   "lint-staged": {
     "*.{tsx,css,html}": "prettier --write"

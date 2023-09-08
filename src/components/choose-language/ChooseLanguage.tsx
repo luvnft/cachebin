@@ -23,9 +23,9 @@ const ChooseLanguage = ({ lang, setLang }: ChooseLanguageProps): JSX.Element => 
         overrides={{
           Input: {
             props: {
-              placeholder: 'Select language',
-            },
-          },
+              placeholder: 'Select language'
+            }
+          }
         }}
       />
     </div>
