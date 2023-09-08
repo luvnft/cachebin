@@ -12,23 +12,21 @@ const ChooseLanguage = ({ lang, setLang }: ChooseLanguageProps): JSX.Element => 
   }, [lang]);
 
   return (
-    <div data-testid="choose-language--component">
-      <Combobox
-        value={lang}
-        onChange={(nextValue) => setLang(nextValue)}
-        options={langOptions}
-        mapOptionToString={(option: string) => option}
-        autocomplete={true}
-        size={SIZE.compact}
-        overrides={{
-          Input: {
-            props: {
-              placeholder: 'Select language'
-            }
+    <Combobox
+      value={lang}
+      onChange={(nextValue) => setLang(nextValue)}
+      options={langOptions}
+      mapOptionToString={(option: string) => option}
+      autocomplete={true}
+      size={SIZE.compact}
+      overrides={{
+        Input: {
+          props: {
+            placeholder: 'Select language'
           }
-        }}
-      />
-    </div>
+        }
+      }}
+    />
   );
 };
 

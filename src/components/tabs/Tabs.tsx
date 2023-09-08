@@ -8,12 +8,12 @@ const Tabs = (): JSX.Element => {
   return (
     <Card>
       <StatefulTabs>
-        <Tab data-testid="create-bin-tab" title="Create" artwork={Plus}>
-          <div data-testid="create-bin-component">
+        <Tab title="Create" artwork={Plus}>
+          <div>
             <CreateBin />
           </div>
         </Tab>
-        <Tab data-testid="fetch-bin-tab" title="Fetch" artwork={ArrowDown}>
+        <Tab title="Fetch" artwork={ArrowDown}>
           Fetch Bin
         </Tab>
       </StatefulTabs>

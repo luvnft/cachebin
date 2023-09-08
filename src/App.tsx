@@ -11,9 +11,7 @@ const App = (): JSX.Element => {
         Cachebin is a safe and decentralized service to share code snippets, notes and many more.
         Paste anything and share with your friends
       </h4>
-      <div data-testid="tabs-component">
-        <Tabs />
-      </div>
+      <Tabs />
     </Block>
   );
 };
