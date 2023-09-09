@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { Checkbox, LABEL_PLACEMENT } from 'baseui/checkbox';
 import { UploadCheckboxProps } from '../../core/models/upload-checkbox-props.model';
 
@@ -17,4 +17,4 @@ const UploadCheckbox = ({ isUpload, setIsUpload, setLang }: UploadCheckboxProps)
   );
 };
 
-export default UploadCheckbox;
+export default memo(UploadCheckbox);
