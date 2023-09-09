@@ -1,6 +1,6 @@
 import React, { useMemo, memo } from 'react';
 import { Combobox, SIZE } from 'baseui/combobox';
-import { ChooseLanguageProps } from '../../core/models/ChooseLanguageProps.model';
+import { ChooseLanguageProps } from '../../core/models/choose-language-props.model';
 import { languages } from '../../core/data/languages';
 
 const ChooseLanguage = ({ lang, setLang }: ChooseLanguageProps): JSX.Element => {
