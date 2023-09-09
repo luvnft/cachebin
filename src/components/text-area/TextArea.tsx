@@ -4,10 +4,14 @@ import { TextAreaProps } from '../../core/models/text-area-props.model';
 import { inputStyles } from '../../core/data/input-styles';
 
 const TextArea = ({ text, setText }: TextAreaProps): JSX.Element => {
+  const handleChange = (e: React.ChangeEvent<HTMLTextAreaElement>): void => {
+    setText(e.currentTarget.value);
+  };
+
   return (
     <Textarea
       value={text}
-      onChange={(e) => setText(e.currentTarget.value)}
+      onChange={handleChange}
       placeholder="Input text..."
       clearable
       autoFocus

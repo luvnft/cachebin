@@ -11,12 +11,20 @@ const ChooseLanguage = ({ lang, setLang }: ChooseLanguageProps): JSX.Element => 
     });
   }, [lang]);
 
+  const handleChange = (nextValue: string): void => {
+    setLang(nextValue);
+  };
+
+  const mapOptionToString = (option: string): string => {
+    return option;
+  };
+
   return (
     <Combobox
       value={lang}
-      onChange={(nextValue) => setLang(nextValue)}
+      onChange={handleChange}
       options={langOptions}
-      mapOptionToString={(option: string) => option}
+      mapOptionToString={mapOptionToString}
       autocomplete={true}
       size={SIZE.compact}
       overrides={{
