@@ -1,6 +1,7 @@
 import React from 'react';
 import { Textarea } from 'baseui/textarea';
 import { TextAreaProps } from '../../core/models/text-area-props.model';
+import { inputStyles } from '../../core/data/input-styles';
 
 const TextArea = ({ text, setText }: TextAreaProps): JSX.Element => {
   return (
@@ -12,11 +13,7 @@ const TextArea = ({ text, setText }: TextAreaProps): JSX.Element => {
       autoFocus
       overrides={{
         Input: {
-          style: {
-            minHeight: '300px',
-            width: '100vw',
-            resize: 'vertical'
-          }
+          style: inputStyles
         }
       }}
     />
