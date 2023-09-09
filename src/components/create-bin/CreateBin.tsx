@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { Fragment, useState } from 'react';
 import ChooseLanguage from '../choose-language/ChooseLanguage';
 import { Block } from 'baseui/block';
 import { HeadingLevel } from 'baseui/heading';
@@ -18,11 +18,15 @@ const CreateBin = (): JSX.Element => {
         <ParagraphMedium>Create a paste</ParagraphMedium>
         <UploadCheckbox isUpload={isUpload} setIsUpload={setIsUpload} setLang={setLang} />
         <div className="component--division" />
-        <TextArea text={text} setText={setText} />
-        <ParagraphMedium>
-          <strong>Options</strong>
-        </ParagraphMedium>
-        <ChooseLanguage lang={lang} setLang={setLang} />
+        {!isUpload && (
+          <Fragment>
+            <TextArea text={text} setText={setText} />
+            <ParagraphMedium>
+              <strong>Options</strong>
+            </ParagraphMedium>
+            <ChooseLanguage lang={lang} setLang={setLang} />
+          </Fragment>
+        )}
       </HeadingLevel>
     </Block>
   );
