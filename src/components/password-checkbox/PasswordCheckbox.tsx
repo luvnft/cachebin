@@ -1,5 +1,5 @@
 import { Checkbox, LABEL_PLACEMENT } from 'baseui/checkbox';
-import React from 'react';
+import React, { memo } from 'react';
 import { PasswordCheckboxProps } from '../../core/models/password-checkbox-props.model';
 
 const PasswordCheckbox = ({
@@ -29,4 +29,4 @@ const PasswordCheckbox = ({
   );
 };
 
-export default PasswordCheckbox;
+export default memo(PasswordCheckbox);

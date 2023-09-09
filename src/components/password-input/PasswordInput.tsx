@@ -1,5 +1,5 @@
 import { Input, SIZE } from 'baseui/input';
-import React from 'react';
+import React, { memo } from 'react';
 import { PasswordInputProps } from '../../core/models/password-input-props.model';
 
 const PasswordInput = ({ password, setPassword }: PasswordInputProps): JSX.Element => {
@@ -18,4 +18,4 @@ const PasswordInput = ({ password, setPassword }: PasswordInputProps): JSX.Eleme
   );
 };
 
-export default PasswordInput;
+export default memo(PasswordInput);
