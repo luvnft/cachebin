@@ -12,6 +12,7 @@ import { RawContent } from '../../core/models/raw-content.model';
 import Tag from '../tag/Tag';
 import DisplayFiles from '../display-files/DisplayFiles';
 import DisplayCode from '../display-code/DisplayCode';
+import CryptoJS from 'crypto-js';
 
 const FetchBin = (): JSX.Element => {
   const [pasteHash, setPasteHash] = useState('');
