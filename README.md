@@ -6,7 +6,9 @@ This project is a text sharing application built using IPFS protocol. This proje
 <br />
 A user can upload or write a text document in the textfield area. 
 
-
+<img width="1439" alt="Screenshot 2023-09-16 at 6 19 26 PM" src="https://github.com/suyashpatil78/cachebin/assets/127177049/765fc247-4423-4198-9bed-2031a7c077e1">
 
 There is also a password protection feature in the application. Once the upload is finished, a hash is generated using SHA-256 algorithm and is stored in web3.storage. CryptoJS is stored to convert the data into cypher text.
 In the other section, user has to enter the hash to access the text. 
+
+<img width="1439" alt="Screenshot 2023-09-16 at 6 20 34 PM" src="https://github.com/suyashpatil78/cachebin/assets/127177049/0177ebfe-d6f2-4dff-80f9-49344cee9a83">
