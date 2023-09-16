@@ -14,10 +14,9 @@ const PasswordCheckbox = ({
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
-    if (isFetching === false) {
+    if (!isFetching) {
       generateRandomPassword();
     }
-    console.log(e.currentTarget.checked);
     setEnablePassword(e.currentTarget.checked);
   };
 
