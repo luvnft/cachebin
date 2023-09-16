@@ -5,7 +5,8 @@ import { PasswordCheckboxProps } from '../../core/models/password-checkbox-props
 const PasswordCheckbox = ({
   enablePassword,
   setEnablePassword,
-  setPassword
+  setPassword,
+  isFetching
 }: PasswordCheckboxProps): JSX.Element => {
   const generateRandomPassword = (): void => {
     const password = Math.random().toString(36).substring(2, 15);
@@ -13,7 +14,9 @@ const PasswordCheckbox = ({
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
-    generateRandomPassword();
+    if (isFetching === false) {
+      generateRandomPassword();
+    }
     console.log(e.currentTarget.checked);
     setEnablePassword(e.currentTarget.checked);
   };

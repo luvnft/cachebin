@@ -3,4 +3,5 @@ export interface PasswordProps {
     password: string;
     setEnablePassword: (enablePassword: boolean) => void;
     setPassword: (password: string) => void;
+    isFetching: boolean;
 };

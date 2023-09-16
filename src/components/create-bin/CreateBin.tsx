@@ -142,6 +142,7 @@ const CreateBin = (): JSX.Element => {
           setEnablePassword={setEnablePassword}
           password={password}
           setPassword={setPassword}
+          isFetching={false}
         />
         <div style={{ marginTop: 16, marginBottom: 16 }} />
         <Button size={SIZE.compact} isLoading={loading} onClick={createNewPaste}>

@@ -7,7 +7,8 @@ const Password = ({
   enablePassword,
   setEnablePassword,
   password,
-  setPassword
+  setPassword,
+  isFetching
 }: PasswordProps): JSX.Element => {
   return (
     <React.Fragment>
@@ -15,6 +16,7 @@ const Password = ({
         enablePassword={enablePassword}
         setEnablePassword={setEnablePassword}
         setPassword={setPassword}
+        isFetching={isFetching}
       />
       <div className="component--division" />
       {enablePassword && <PasswordInput password={password} setPassword={setPassword} />}

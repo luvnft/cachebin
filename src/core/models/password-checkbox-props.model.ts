@@ -1,6 +1,6 @@
 import { PasswordProps } from "./password-props.model";
 
-export interface PasswordCheckboxProps extends Pick<PasswordProps, 'enablePassword' | 'setEnablePassword' | 'setPassword'> {
-
+export interface PasswordCheckboxProps extends Pick<PasswordProps, 'enablePassword' | 'setEnablePassword' | 'setPassword' | 'isFetching'> {
+    
 };
 
