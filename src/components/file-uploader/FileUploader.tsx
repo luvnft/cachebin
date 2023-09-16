@@ -12,7 +12,6 @@ const FileUploader = ({
   };
 
   const handleUpload = (acceptedFiles: File[], rejectedFiles: File[]): void => {
-    console.log(acceptedFiles, rejectedFiles);
     setIsUploading(true);
     setUploadFiles(acceptedFiles);
     setIsUploading(false);

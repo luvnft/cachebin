@@ -13,7 +13,6 @@ const DisplayCode = ({ content, language }: DisplayCodeProps): JSX.Element => {
     wrapLongLines: true
   };
 
-  console.log('invoked');
   return (
     <div style={{ fontSize: 14 }}>
       <CopyBlock {...copyBlockProps} />
