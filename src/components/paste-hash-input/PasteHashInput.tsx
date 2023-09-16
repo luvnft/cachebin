@@ -13,6 +13,8 @@ const PasteHashInput = ({ pasteHash, setPasteHash }: PasteHashInputProps): JSX.E
       onChange={handleChange}
       placeholder="Paste Hash"
       clearOnEscape
+      clearable
+      autoFocus
       size={SIZE.compact}
     />
   );
