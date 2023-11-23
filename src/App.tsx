@@ -6,10 +6,10 @@ import Tabs from './components/tabs/Tabs';
 const App = (): JSX.Element => {
   return (
     <Block className="page--header">
-      <h1>Cachebin</h1>
+      <h1>Paste</h1>
       <h4>
-        Cachebin is a safe and decentralized service to share code snippets, notes and many more.
-        Paste anything and share with your friends
+        Paste is a secure and decentralized service for sharing code snippets, notes, and much
+        more. Paste anything and share it with your friends. Paste it to me.
       </h4>
       <Tabs />
     </Block>
